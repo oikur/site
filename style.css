@@ -1,0 +1,797 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    width: auto;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.button {
+    border-radius: 2px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 0;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    cursor: pointer;
+    width: 210px;
+    height: 51px;
+}
+
+.title {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.input {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #131313;
+    border: 1px solid rgba(54, 54, 54, 0.3);
+    box-sizing: border-box;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.top-bar, .projects-wrap {
+    background-color: black;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 24px 15px 22px; 
+
+}
+
+.top-bar-navigation {
+    display: flex;
+    flex-direction: row; 
+    list-style-type: none; 
+}
+
+.top-bar-navigation-item {
+     margin-right: 47px;  
+}
+
+.top-bar-navigation-item:hover, 
+.top-bar-phone-number, 
+.intro-highlited-text,
+.top-bar-name-text {
+    color: #E3B873;
+}
+
+.top-bar-phone-number {
+    margin-right: 45px;
+}
+
+.request-a-call-button {
+    padding: 13px 33px;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 15px;
+}
+
+.intro-wrap {
+    display: flex;
+    background-image: url(img/section-1-bg.png);
+    height: 707px;
+    padding-left: 130px;
+    align-items: center;
+}
+
+.intro {
+    width: 520px;
+}
+
+.intro-title {
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+}
+
+.intro-text {
+    font-size: 22px;
+    line-height: 36px;
+}
+.calculate-button {
+    padding: 20px 40px;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    margin-right: 20px;
+}
+.submit-application {
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 20px;
+    background: transparent; 
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
+.projects-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 416px;
+}
+.projects-info {
+    padding-top: 175px;
+    padding-left: 135px;
+    padding-right: 50px;
+    
+}
+.projects-info-title {
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    width: 250px;
+    text-align: center;
+}
+.projects-info-subtitle {
+    font-size: 14px;
+    line-height: 27px;
+    width: 440px;
+}
+.projects-info-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.projects-info-features-item h3{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+.projects-info-pagination, 
+.projects-info-pagination-list {
+    display: flex;
+    align-items: center;  
+}
+
+.projects-info-pagination {
+    padding-top: 80px;
+}
+
+.projects-info-pagination-list-item {
+    background: rgba(255, 255, 255, 0.3);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    list-style-type: none;
+    margin-right: 17px;
+}
+
+.projects-info-pagination-list-item:active {
+    background: white;
+}
+
+.projects-pagination-arrow--back,
+.projects-pagination-arrow--forward {
+    
+    background: black;
+    border: none;
+    margin-left: 29px;
+}
+.projects-pagination-arrow--back img {
+    transform: rotateY(180deg);
+    margin-right: 29px;
+}
+
+.projects-media-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 107px 60px 52px 0px; 
+}
+
+.projects-media-list-item:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.projects-media-list-item {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    list-style: none;
+}
+
+.online-control {
+    margin: -325px auto 0;
+    text-align: center;
+}
+
+.online-control-title{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 28px;  
+}
+
+.online-control-picture,
+.online-control-video,
+.online-control-video-button,
+.repair-types-picture, 
+.our-clients-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.online-control-picture,
+.repair-types-picture,
+.our-clients-picture {
+    margin-bottom: 30px;
+}
+
+.dividing-line {
+    width: 32px;
+    height: 1.54px;
+    background: #E3B873;
+    border-radius: 30px;
+}
+
+.online-control-video {
+    position: relative;
+    width: 817px;
+    height: 434px;
+    margin: 0 auto;
+}
+
+.online-control-video::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.online-control-video-button {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.online-control-video-button-triangle {
+    width: 28px;
+    height: 28px;
+    padding-left: 7px;
+}
+
+hr {
+    height: 1.54px;
+    width: 55px;
+    background-color: #E3B873;
+    border-radius: 30px; 
+    border: none;
+    margin-top: 62px;   
+    margin-bottom: 35px;
+}
+
+.online-control-text {
+    margin: 35px auto;
+    width: 681px;
+    height: 130px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 93px;
+}
+.contacts-form {
+    margin-bottom: 150px;
+}
+
+.repair-types-title,
+.our-clients-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #181818;
+    text-align: center;
+}
+
+.repair-types-options-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+}
+
+
+.repair-types-options-list-wrap {
+    width: 330px;
+    height:286px;
+    margin: auto;
+    margin-top: -159px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    padding-bottom: 50px;
+    position: relative;
+    
+}
+
+.repair-types-options-list-item {
+    color:  #959595;
+}
+
+.repair-types-options-title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    padding: 25px 88px 13px 31px;
+    text-transform: capitalize;
+}
+
+.price-button {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    width: 228px;
+    height: 54px;
+    padding: 17px;
+    position: relative;
+    left: 31px;
+    top: -27px;
+}
+
+.offer-form-section {
+    color: #363636;
+    display: flex;
+    justify-content: center;
+    gap: 131px;
+    margin-bottom: 322px;
+}
+
+.offer {
+    width:703px;
+    height: 645px;
+    background-image: url(img/offer-bg.jpg);
+}
+
+.offer-list-item{
+    margin-bottom: 115px;
+    margin-left: 220px;
+    padding-left: 64px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    list-style: none;
+    position: relative; 
+    height: 39px;
+}
+
+.offer-list-item::before {
+    content: counter(li);
+    counter-increment:li;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 41px;
+    height: 41px;
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 50%;
+    font-family: Yeseva One;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.offer-list-item:first-child {
+    margin-top: 117px;
+    width: 316px;
+}
+.offer-list-item:nth-child(3n+1) {
+
+}
+
+.request-form-wrap {
+    background-color: #131313;
+    color: #FFFFFF;
+    width: 506px;
+    height: 509px;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    margin-left: 45px;
+}
+
+.request-form-title {
+    font-size: 18px;
+    line-height: 26px;
+    width: 297px;
+    margin: 28px auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+
+.request-form-field {
+    margin-bottom: 52px;
+}
+form {
+    position: relative;
+
+}
+.pig-savings {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+}
+.pig-savings-pig {
+    width: 72px;
+    height: 72px;
+    background: #E3B873;
+    box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pig-savings-pig-vector {
+    height: 40px;
+    width: auto;
+}
+
+.pig-savings-text {
+    font-size: 18px;
+    line-height: 26px;  
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+
+}
+
+.style {
+    background-image: url('img/style-bg.png');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 864px;
+    width: 1440px;
+    margin-bottom: 110px;
+}
+
+.style-list-wrap {
+    width: 411px;
+    margin: 137px 97px 100px;
+    padding: 1px;
+}
+
+
+.style-list-item {
+    font-size: 20px;
+    line-height: 38px;
+    list-style: none;
+
+}
+
+.photo-block {
+    height: 804px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: -108px 102px 39px;
+
+}
+
+
+.photo-block-image-2 {
+    margin-top: -70px;
+}
+
+.photo-block-image-4 {
+    margin-top: -360px;
+}
+
+.our-clients {
+    margin-bottom: 40px;
+}
+.review-text {
+    color: #959595;
+}
+
+.rewiew-wrap,
+.review-author  {
+    display: flex;
+    
+}
+.review {
+    width: 376px;
+    height: 428px;
+    position: relative;
+    margin-left: 54px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+
+
+.review-author-photo {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin-left: 22px;
+    margin-top: 24px;
+
+}
+
+.review-author-name {
+    width: 178px;
+    height: 42px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    margin-left: 24px;
+    margin-top: 41px;
+
+}
+
+.review-text {
+    width: 324px;
+    height: 216px;
+    margin: 39px 32px 90px 21px;
+}
+
+.vertical-rule {
+    width: 0.75px;
+    height: 54px;
+    color: #FFFFFF;
+}
+.review-info-button {
+    width: 293px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -47px;
+    position: absolute;
+
+}
+
+.review-info-button-logo {
+    width: 32px;
+    height: 32px;
+
+}
+
+.questions-form-bg {
+    background-image: url(img/city-bg.png);
+    height: 380px;
+    position: relative;
+}
+
+.questions-form-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.questions-form-title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.contacts {
+    height: 954px;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, 
+    rgba(24, 24, 24, 0.72) 100%);
+}
+
+.contacts-address {
+    padding-top: 275px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.contacts-tel {
+    text-decoration: none;
+    color: #E3B873;
+}
+input {
+    border: 0;
+    background: #131313;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.request-form-personal-data-use-checkbox,
+.contacts-form-personal-data-use-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.request-form-personal-data-use-checkbox + label::after,
+.contacts-form-personal-data-use-checkbox + label::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    border-radius: 1px;
+    position: relative;
+    display: block;
+
+}
+
+.request-form-personal-data-use-checkbox:checked + label::after,
+.contacts-form-personal-data-use-checkbox:checked + label::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url(img/checkbox.png);
+    border-radius: 1px;
+    position: relative;
+    display: block;
+}
+
+.request-form-field-personal-data {
+    display: flex;
+
+}
+
+.request-form input {
+    width: 408px;
+   
+    
+}
+
+.call-measurer-button {
+    margin-bottom: 27px;
+}
+
+.questions-form-title {
+    margin-top: 34px;
+}
+
+.contacts-form {
+   display: flex;
+   justify-content: center;
+   gap: 55px;
+
+}
+
+.contacts-form input {
+        border: 0;
+        background: #FFFFFF;
+        border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+        width: 230px;
+        color: #363636;
+    
+}
+
+.contacts-form label {
+    color: rgba(54, 54, 54, 0.5);;
+}
+
+.contacts-form-field {
+    text-align: left;
+}
+
+.contacts-form-personal-data {
+    margin-top: 37px;
+}
+
+.contacts-form-personal-data label {
+    color: #181818;
+}
+
+.questions-form {
+    display: grid;
+    grid-template-rows: 90px 50px 50px;
+    grid-template-columns: 230px 230px;
+    gap: 50px;
+    position: relative;
+    z-index: 1;
+    width: 883px;
+    height: 445px;
+    background: black;
+    margin: auto;
+
+}
+
+.questions-form-field-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    
+}
+
+.questions-form-field-phone {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+
+.questions-form-field-question {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   
+}
+
+.questions-form-field-checkbox {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+}
+
+.questions-form-field-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+}
