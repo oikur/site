@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -100,7 +101,7 @@ label {
 }
 
 .top-bar-wrap, .projects {
-    background-color: black;
+    background-color: #131313;
 }
 
 .top-bar {
@@ -266,8 +267,8 @@ label {
 .projects-info {
     padding-top: 175px;
     padding-right: 50px;
-    min-width: 50%;
-    width: 50%;
+    min-width: 42%;
+    width: 42%;
 }
  
 @media (max-width: 1199px) {
@@ -284,6 +285,7 @@ label {
     line-height: 37px;
     letter-spacing: -0.07em;
     width: 250px;
+    margin: 0;
 }
 
 @media (max-width: 1199px) {
@@ -313,6 +315,16 @@ label {
 .projects-info-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1199px) {
+    .projects-info-features {
+        justify-items: center;
+    }
+}
+
+.projects-info-features-item {
+    width: 60%;
 }
 
 .projects-info-features-item h3{
@@ -424,8 +436,8 @@ label {
 }
 
 .projects-media {
-    min-width: 50%;
-    width: 50%;
+    min-width: 58%;
+    width: 58%;
 }
 
 @media (max-width: 1199px) {
@@ -435,9 +447,13 @@ label {
 }
 
 .projects-media-list {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 107px 60px 52px 0px; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 105px 0 0 0;
+    padding: 0;
+    gap: 60px;
 }
 
 .projects-media-list-item:hover {
@@ -458,6 +474,7 @@ label {
 
 .projects-media-image {
     width: 100%;
+    margin-top: 50px;
 }
 
 .online-control {
@@ -806,8 +823,9 @@ hr {
 .request-form-wrap {
     background-color: #131313;
     color: #FFFFFF;
-    width: 506px;
-    height: 509px;
+    width: 100%;
+    max-width: 100%;
+    height: 510px;
     margin-top: 90px;
 }
 
@@ -840,7 +858,7 @@ form {
     display: flex;
     align-items: flex-end;
     gap: 25px;
-    margin-top: 40px;
+    margin-top: 65px;
 }
 
 .pig-savings-pig {
@@ -872,7 +890,8 @@ form {
     justify-content: space-between;
     align-items: center;
     height: 864px;
-    width: 1440px;
+    width: 100%;
+    max-width: 100%;
     margin-bottom: 110px;
 }
 
@@ -977,7 +996,6 @@ form {
     color: #181818;
     margin-left: 24px;
     margin-top: 41px;
-
 }
 
 .review-text {
@@ -989,8 +1007,9 @@ form {
 .vertical-rule {
     width: 0.75px;
     height: 54px;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
 }
+
 .review-info-button {
     width: 293px;
     display: flex;
@@ -998,12 +1017,14 @@ form {
     align-items: center;
     margin-top: -47px;
     position: absolute;
-
+    font-family: 'Yeseva One';
+    font-size: 17px;
 }
 
 .review-info-button-logo {
     width: 32px;
     height: 32px;
+    margin-left: 12px;
 
 }
 
@@ -1070,9 +1091,29 @@ form {
     display: block;
 }
 
+.request-form-personal-data-use-checkbox-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    margin-top: -30px;
+}
+
+.questions-form-personal-data-use-checkbox-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
 .request-form-field-personal-data {
     display: flex;
+}
 
+.request-form-field-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 30px;
 }
 
 .request-form input {
